@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="wrap_content">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:id="@+id/circleView"
+        android:src="@drawable/user_avatar1"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="5dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Name"
+        android:textSize="18sp"
+        android:textColor="@color/black"
+        android:id="@+id/name"
+        android:layout_marginLeft="50dp"
+        android:layout_marginStart="22dp"
+        android:layout_marginTop="5dp"
+        android:layout_alignTop="@+id/circleView"
+        android:layout_toEndOf="@+id/circleView" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/status"
+        android:text="This is my status"
+        android:textSize="14sp"
+        android:layout_below="@+id/name"
+        android:layout_alignStart="@+id/name"
+        android:layout_marginTop="3dp" />
+
+
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="25dp"
+        android:text="Select"
+        android:textSize="11sp"
+        android:background="@drawable/button_change_name"
+        android:textColor="@color/colorPrimaryDark"
+        android:layout_marginTop="5dp"
+        android:layout_marginRight="10dp"
+        android:id="@+id/add_user"
+        android:layout_below="@id/status"
+        android:layout_alignParentEnd="true"
+        android:paddingRight="1dp"
+        android:paddingLeft="1dp"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@id/add_user"
+        android:background="@color/colorView"
+        android:layout_marginLeft="75dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="3dp"/>
+
+</RelativeLayout>

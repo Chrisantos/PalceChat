@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="50dp">
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/users"
+        android:text="Palce Chat"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        android:layout_marginTop="2dp"
+        android:layout_centerVertical="true"/>
+
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:layout_width="27dp"
+        android:layout_height="27dp"
+        android:src="@drawable/user_avatar1"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="3dp"
+        android:visibility="invisible"
+        android:layout_centerVertical="true"
+        android:id="@+id/profile_pic"/>
+
+</RelativeLayout>

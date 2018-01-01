@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.chrisantuseze.palcechat.MainActivity">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/appBarLayout">
+    <include layout="@layout/main_app_bar" android:id="@+id/main_page_toolbar"/>
+
+        <android.support.design.widget.TabLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/mainTabs"
+            android:theme="@style/AppTheme.AppBarOverlay"
+            app:tabIndicatorColor="@color/white">
+
+        </android.support.design.widget.TabLayout>
+
+    </android.support.design.widget.AppBarLayout>
+
+    <android.support.v4.view.ViewPager
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/appBarLayout"
+        android:id="@+id/view_pager">
+
+    </android.support.v4.view.ViewPager>
+
+
+    <!--<android.support.design.widget.AppBarLayout-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:id="@+id/appBarLayoutt"-->
+        <!--android:layout_alignParentBottom="true"-->
+        <!--android:layout_centerHorizontal="true">-->
+        <!--<include layout="@layout/main_app_bar_bottom" android:id="@+id/main_page_toolbar_bottom"/>-->
+
+
+    <!--</android.support.design.widget.AppBarLayout>-->
+
+
+</RelativeLayout>

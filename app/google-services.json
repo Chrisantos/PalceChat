@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "601871457705",
+    "firebase_url": "https://palcechat.firebaseio.com",
+    "project_id": "palcechat",
+    "storage_bucket": "palcechat.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:601871457705:android:8ec69d474f91c792",
+        "android_client_info": {
+          "package_name": "com.example.chrisantuseze.palcechat"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "601871457705-bub9gfpjhqaa2q7auvsfojnfhbib359p.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.chrisantuseze.palcechat",
+            "certificate_hash": "2e3700c1c5447ba4362131b47a9b78166d02c80e"
+          }
+        },
+        {
+          "client_id": "601871457705-1jsg0eoumj5i1cc5r2s4cjuvggeprk7i.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBVWmrX3eB-ZuDrkustPkbdGrTDa_BU9Q8"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "601871457705-1jsg0eoumj5i1cc5r2s4cjuvggeprk7i.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

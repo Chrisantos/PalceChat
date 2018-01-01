@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">Palce Chat</string>
+    <string name="title_activity_splash">Splash</string>
+    <string name="next">NEXT</string>
+    <string name="skip">SKIP</string>
+    <string name="start">GOT IT</string>
+
+    <string name="slide_1_title">100% Cloud Storage!</string>
+    <string name="slide_1_desc">Store and retrieve your chats securedly from a cloud database!</string>
+
+    <string name="slide_2_title">Just Here!</string>
+    <string name="slide_2_desc">The easiest way to keep in touch with your friends!</string>
+
+    <string name="slide_3_title">Personal Assistant!</string>
+    <string name="slide_3_desc">Find places around you with ease!</string>
+    <string name="slide_4_title">palce</string>
+    <string name="slide_4_desc">Expanding your niche!</string>
+    <string name="palce_chat">palce</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+</resources>

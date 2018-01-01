@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.chrisantuseze.palcechat.Settings.NameActivity"
+    android:background="@color/milk">
+    <include layout="@layout/main_app_bar" android:id="@+id/main_page_toolbar"/>
+
+
+    <EditText
+        android:id="@+id/name"
+        android:layout_width="match_parent"
+        android:layout_height="43dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="50dp"
+        android:ems="10"
+        android:textSize="18sp"
+        android:imeOptions="actionDone"
+        android:hint="Your Name"
+        android:focusableInTouchMode="true"
+        android:maxLines="1"
+        android:maxLength="80"
+        android:inputType="text"
+        android:textColor="@color/black"
+        android:layout_marginTop="31dp"
+        android:layout_below="@+id/main_page_toolbar"
+        android:layout_centerHorizontal="true" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/speech_bubble"
+        android:layout_alignTop="@+id/name"
+        android:layout_toEndOf="@+id/ok" />
+
+
+
+    <Button
+        android:layout_width="120dp"
+        android:layout_height="@dimen/dimen_btn_height"
+        android:id="@+id/ok"
+        android:text="Save Changes"
+        android:textColor="@color/white"
+        android:layout_marginLeft="10dp"
+        android:background="@drawable/button_change_status"
+        android:layout_weight="1"
+        android:layout_marginTop="27dp"
+        android:layout_below="@+id/name"
+        android:layout_alignEnd="@+id/name" />
+
+    <com.wang.avi.AVLoadingIndicatorView
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:id="@+id/avi"
+        style="@style/AVLoadingIndicatorView"
+        android:visibility="visible"
+        app:indicatorName="BallPulseRiseIndicator"
+        app:indicatorColor="@color/colorPrimary"
+        android:layout_below="@id/ok"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"/>
+
+
+</RelativeLayout>

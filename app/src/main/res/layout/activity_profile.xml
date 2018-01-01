@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.chrisantuseze.palcechat.ProfileActivity"
+    android:background="@drawable/awesome_abstract">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/relative1"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:background="@drawable/frame_background_milk">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:id="@+id/profile_image"
+            android:src="@drawable/user_avatar1"
+            android:paddingTop="-3dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/name"
+            android:text="Name"
+            android:textSize="30sp"
+            android:textColor="@color/black"
+            android:layout_below="@id/profile_image"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_centerHorizontal="true"
+            android:layout_toEndOf="@id/name"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="7dp"
+            android:layout_below="@id/profile_image">
+
+            <ImageButton
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:id="@+id/send_request"
+                android:src="@drawable/add_friend11"
+                android:layout_gravity="center"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/tvrequest"
+                android:text="Add Friend"
+                android:textSize="11sp"
+                android:layout_gravity="center"/>
+
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/status"
+        android:text="Software and Electronic Engineer"
+        android:textSize="13sp"
+        android:textColor="@color/white"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/relative1"
+        android:layout_marginTop="30dp"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@id/status"
+        android:background="@color/colorView"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="3dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/location"
+        android:text="Location"
+        android:textSize="14sp"
+        android:textColor="@color/white"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/status"
+        android:layout_marginTop="50dp"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@id/location"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/linear_contact">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/phone_number"
+            android:text="Phone Number"
+            android:textColor="@color/white"
+            android:textSize="14sp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/email"
+            android:text="email"
+            android:textColor="@color/white"
+            android:textSize="14sp"
+            android:layout_toEndOf="@id/phone_number"
+            android:layout_marginLeft="20dp"/>
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@id/linear_contact"
+        android:background="@color/colorView"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="3dp"/>
+
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/dimen_btn_height"
+        android:id="@+id/unfriend"
+        android:text="Unfriend"
+        android:textSize="13sp"
+        android:layout_below="@id/linear_contact"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="80dp"
+        android:paddingLeft="3dp"
+        android:paddingRight="3dp"
+        android:textColor="@color/colorPrimaryDark"
+        android:background="@drawable/button_change_name"
+        android:visibility="invisible"/>
+
+ <LinearLayout
+     android:layout_width="wrap_content"
+     android:layout_height="wrap_content"
+     android:orientation="horizontal"
+     android:layout_centerHorizontal="true"
+     android:layout_alignParentBottom="true"
+     android:layout_marginBottom="10dp">
+
+    <Button
+        android:layout_width="@dimen/dimen_profile_btn_width"
+        android:layout_height="@dimen/dimen_btn_height"
+        android:id="@+id/accept_request"
+        android:text="Accept Friend Request"
+        android:textSize="11sp"
+        android:textColor="@color/colorPrimaryDark"
+        android:background="@drawable/button_change_name"
+        android:visibility="invisible"/>
+    <Button
+        android:layout_width="@dimen/dimen_profile_btn_width"
+        android:layout_height="@dimen/dimen_btn_height"
+        android:id="@+id/decline_request"
+        android:text="Decline Friend Request"
+        android:textSize="11sp"
+        android:textColor="@color/colorPrimaryDark"
+        android:layout_marginLeft="10dp"
+        android:background="@drawable/button_change_name"
+        android:visibility="invisible"/>
+
+ </LinearLayout>
+
+</RelativeLayout>

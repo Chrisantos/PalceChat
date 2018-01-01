@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:id="@+id/circleView"
+        android:src="@drawable/user_avatar1"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="8dp"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="50dp"
+        android:layout_marginStart="22dp"
+        android:layout_marginTop="3dp"
+        android:layout_alignTop="@+id/circleView"
+        android:layout_toEndOf="@+id/circleView"
+        android:id="@+id/linear">
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:text="Name"
+        android:textSize="18sp"
+        android:textColor="@color/black"
+        android:id="@+id/name" />
+    <ImageView
+        android:layout_width="15dp"
+        android:layout_height="15dp"
+        android:id="@+id/online_status"
+        android:layout_toEndOf="@+id/name"
+        android:layout_marginLeft="150dp"
+        android:src="@drawable/offline"
+        android:layout_alignParentRight="true"/>
+
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/status"
+        tools:text="Software/AI Engineer"
+        android:textSize="13sp"
+        android:layout_below="@+id/linear"
+        android:layout_alignStart="@+id/linear"
+        android:layout_marginTop="3dp" />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@id/status"
+        android:background="@color/colorView"
+        android:layout_marginLeft="75dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginBottom="3dp"/>
+
+</RelativeLayout>
